@@ -1,17 +1,14 @@
-#!/bin/bash
-
 #include <stdio.h>
-/*
+/**
+ * main -Entry point
  *
- * print
- *
- * return: zero
+ * Return: 0
  *
  */
 int main(void)
-{ 
-	char mainStr[] = "\"Programming is like building a multilingual puzzle";
+{
+	puts("\"Programming is like building a multilingual puzzle");
 
-	puts(mainStr);
-	return(0);
+	return (0);
 }
+
