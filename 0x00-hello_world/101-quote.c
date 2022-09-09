@@ -2,13 +2,12 @@
 #include <unistd.h>
 
 /**
- *
  * main - Entry point
  *
- * Return: 1
+ * used function without puts and printf
  *
+ * Return: 1
  */
-
 int main(void)
 
 {
