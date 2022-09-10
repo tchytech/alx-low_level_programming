@@ -7,25 +7,23 @@
  */
 int main(void)
 {
-	int number_left;
-	int number_right;
+	int tens;
+	int ones;
 
-	for (number_left = 48; number_right <= 78; number_left++)
+	for (tens = 0; tens <= 9; tens++)
 	{
-		for (number_right = number_left + 1 ; number_right <= 78; number_right++)
+		for (ones = tens + 1; ones <= 9; ones++)
 		{
-			putchar(number_left);
-			putchar (number_right);
-			if ((number_left == 56) && (number_right == 78))
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
 			{
-				break;
-			}
-			putchar(',');
-			putchar (' ');
+				putchar(',');
+				putchar(' ');
 
+			}
 		}
 	}
 	putchar('\n');
 	return (0);
-
 }
