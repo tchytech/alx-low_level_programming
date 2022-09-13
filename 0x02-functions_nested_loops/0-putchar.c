@@ -10,12 +10,12 @@
 int main(void)
 
 {
-	char alphabet[8] = "_putchar";
+	char letter[8] = "_putchar";
 	int b;
 
 	for (b = 0; b < 8; b++)
 	{
-		putchar(alphabet[b]);
+		putchar(letter[b]);
 	}
 	putchar(8);
 	return (0);
