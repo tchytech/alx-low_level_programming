@@ -9,23 +9,25 @@
 
 int main(void)
 {
-	int i = 0;
+	int num1, num2, i, n;
+	int next_num;
 
-	unsigned long int a = 0, b = 1, next = 0;
+	n = 98;
 
-	while (i < 98)
+	for (i = 1; i <= n; i++)
 	{
-
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
-
-		if (i < 97)
-			printf(", ");
-		i++;
+		if (i == 98)
+		{
+			printf("%d, ", num2);
+		}
+		else
+		{
+			printf("%d, ", num2);
+			next_num = num1 + num2;
+			num1 = num2;
+			num2 = next_num;
+		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
-
