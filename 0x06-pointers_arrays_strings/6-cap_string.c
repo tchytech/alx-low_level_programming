@@ -1,41 +1,31 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalize first character of a word
- * @str: string to capitalize
- * Return: string
+ * *cap_string - this is awesome
+ * @s: pointer to char params
+ *
+ * Return: *s
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i;
+	int i, j;
+	char delimeters[] = " \t\n,;.!?\"(){}";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (i == 0)
+		if (s[0] >= 97 && s[0] <= 122)
 		{
-			if ((str[i] >= 97 && str[i] <= 122))
-			{
-				str[i] = str[i] - 32;
-				continue;
-			}
+			s[0] = s[0] - 32;
 		}
-		else if (str[i] == ' ')
+		for (j = 0; delimeters[j] != '\0'; j++)
 		{
-			++i;
-			if (str[i] >= 97 && str[i] <= 122)
+			if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
 			{
-				str[i] = str[i] - 32;
-				continue;
-			}
-		}
-		else
-		{
-			if (str[i] >= 65 && str[i] <= 90)
-			{
-				str[i] = str[i] + 32;
+				s[i + 1] = s[i + 1] - 32;
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
+
