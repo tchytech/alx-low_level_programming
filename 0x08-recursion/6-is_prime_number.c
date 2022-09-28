@@ -1,4 +1,7 @@
 #include "main.h"
+
+int tmp_prime(int n, int i);
+
 /**
  * divisors - number is prime?
  * @n: integer params
@@ -6,7 +9,6 @@
  * Return: boolean
  */
 
-int tmp_prime(int n, int i);
 
 int divisors(int n, int m)
 {
