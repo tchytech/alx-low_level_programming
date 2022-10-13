@@ -1,10 +1,9 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-#ifndef FUNCTION_POINTERS_
-#define FUNCTION_POINTERS_
+#include <stddef.h>
+void print_name(char *, void (*)(char *));
+void array_iterator(int *, size_t, void (*)(int));
+int int_index(int *, int, int (*)(int));
 
-void print_name(char *name, void (*f)(char *));
-void array_iterator(int *array, size_t size, void (*action)(int));
-int int_index(int *array, int size, int (*cmp)(int));
-
-#endif /* #ifndef FUNCTION_POINTERS_ */
+#endif
