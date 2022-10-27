@@ -26,4 +26,4 @@ All of the following folders are projects done during the studies:
 | [`0x10-variadic_functions`](https://github.com/tchytech/alx-low_level_programming/tree/master/0x10-variadic_functions) | It aims to learn about variadic functions in **C language** |
 | [`0x12-singly_linked_lists`](https://github.com/tchytech/alx-low_level_programming/tree/master/0x12-singly_linked_lists) | It aims to learn about singly linked lists in **C language** |
 | [`0x13-more_singly_linked_lists`](https://github.com/tchytech/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists) | It aims to learn about singly linked lists in **C language** |
-| [`0x14-Bit manipulation`](https://github.com/tchytech/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists) | it aims at algorithmically manipulating bits or other pieces of data shorter than a byte.
+| [`0x14-Bit manipulation`](https://github.com/tchytech/alx-low_level_programming/tree/master/0x14-bit_manipulation) | it aims at algorithmically manipulating bits or other pieces of data shorter than a byte.
