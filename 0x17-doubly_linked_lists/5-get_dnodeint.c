@@ -1,24 +1,32 @@
 #include "lists.h"
 
 /**
- * free_listint2 - frees a linked list
- * @head: head of a list.
+ * get_dnodeint_at_index - returns the
+ * nth node of a dlistint_t linked list
  *
- * Return: no return.
+ * @head: head of the list
+ * @index: index of the nth node
+ * Return: nth node
  */
-void free_listint2(listint_t **head)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	listint_t *temp;
-	listint_t *curr;
+	unsigned int i;
 
-	if (head != NULL)
+	if (head == NULL)
+		return (NULL);
+
+	while (head->prev != NULL)
+		head = head->prev;
+
+	i = 0;
+
+	while (head != NULL)
 	{
-		curr = *head;
-		while ((temp = curr) != NULL)
-		{
-			curr = curr->next;
-			free(temp);
-		}
-		*head = NULL;
+		if (i == index)
+			break;
+		head = head->next;
+		i++;
 	}
+
+	return (head);
 }
